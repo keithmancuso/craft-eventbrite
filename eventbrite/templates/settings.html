@@ -1,0 +1,10 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    first: true,
+    label: "Token",
+    instructions: "Your OAuth Token, if you dont have one you can create one for your account here. <a href='https://www.eventbrite.com/myaccount/apps/' target='_blank'>https://www.eventbrite.com/myaccount/apps/</a>",
+    name: 'token',
+    value: settings.token,
+    size: 33
+}) }}
